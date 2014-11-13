@@ -16,14 +16,14 @@ function setup()
 
 function draw()
 {
-    background(bg);
+    background(255);
 
     fill(237,112,50);
     noStroke();
  
 
 
-    var duration = 5000;
+    var duration = 1000;
     var timing = (new Date()%duration)/duration;
 
 
@@ -37,4 +37,15 @@ function draw()
 }
     //지구
 
+fill(0);
+    for(var i = -1 ; i <6 ; i++){
+      image(img, i*(100+img.width)+timing*(100+img.width),350);
+      ellipse(i*200+timing*200,450,100,100);
+      // if(timing*250 < 200){
+      //   ellipse(i*200+timing*250,450,100,100);
+      // }else{
+      //   ellipse(i*200+200,450,100,100);
+      // }
+    }
+  
 }
