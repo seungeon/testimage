@@ -29,11 +29,11 @@ function draw()
 
   // Displays the image at its actual size at point (0,0)
   if(timing*3 <1){
-  image(img, 10,10);
+  image(img, timing*900,10);
 } else if(timing*3 <2){
-  image(img2, 10,10);
+  image(img2, timing*900,10);
 }else{
-  image(img3, 10,10);
+  image(img3, timing*900,10);
 }
     //지구
 
