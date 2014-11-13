@@ -23,7 +23,7 @@ function draw()
  
 
 
-    var duration = 1000;
+    var duration = 5000;
     var timing = (new Date()%duration)/duration;
 
 
