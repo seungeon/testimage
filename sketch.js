@@ -41,11 +41,11 @@ fill(0);
     for(var i = -1 ; i <6 ; i++){
       image(img, i*(100+img.width)+timing*(100+img.width),350);
       ellipse(i*200+timing*200,450,100,100);
-      // if(timing*250 < 200){
-      //   ellipse(i*200+timing*250,450,100,100);
-      // }else{
-      //   ellipse(i*200+200,450,100,100);
-      // }
+      if(timing*250 < 200){
+      ellipse(i*200+timing*250,450,100,100);
+     }else{
+      ellipse(i*200+200,450,100,100);
+       }
     }
   
 }
